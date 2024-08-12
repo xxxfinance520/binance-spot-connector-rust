@@ -3,6 +3,8 @@ use strum::Display;
 
 #[derive(Copy, Clone, Display)]
 pub enum KlineInterval {
+    #[strum(serialize = "1s")]
+    Second1,
     #[strum(serialize = "1m")]
     Minutes1,
     #[strum(serialize = "3m")]
